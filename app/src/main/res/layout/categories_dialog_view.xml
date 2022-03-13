@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="@dimen/_12sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:textSize="@dimen/_16ssp"
+        android:gravity="center"
+        android:text="Select Categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+    <CheckBox
+        android:textColor="@color/black_color"
+        android:theme="@style/checkBoxStyle"
+        android:id="@+id/maleStitching"
+        android:layout_margin="4dp"
+        android:padding="8dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+        android:text="Male Stitching"
+        android:fontFamily="@font/segoe_ui_semibold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </CheckBox>
+    <CheckBox
+        android:textColor="@color/black_color"
+        android:theme="@style/checkBoxStyle"
+        android:id="@+id/femaleStitching"
+        android:layout_margin="4dp"
+        android:padding="8dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+        android:text="Female Stitching"
+        android:fontFamily="@font/segoe_ui_semibold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </CheckBox>
+    <CheckBox
+        android:textColor="@color/black_color"
+        android:theme="@style/checkBoxStyle"
+        android:id="@+id/boyStitching"
+        android:layout_margin="4dp"
+        android:padding="8dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+        android:text="Boy Stitching"
+        android:fontFamily="@font/segoe_ui_semibold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </CheckBox>
+    <CheckBox
+        android:textColor="@color/black_color"
+        android:theme="@style/checkBoxStyle"
+        android:id="@+id/girlStitching"
+        android:layout_margin="4dp"
+        android:padding="8dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+        android:text="Girl Stitching"
+        android:fontFamily="@font/segoe_ui_semibold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </CheckBox>
+
+    <Button
+        android:id="@+id/selectCategorybtn"
+        android:padding="@dimen/_12sdp"
+        android:layout_gravity="center_vertical"
+        android:text="ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+</LinearLayout>

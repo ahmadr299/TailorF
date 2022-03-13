@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "674882751235",
+    "project_id": "mytailor-cd370",
+    "storage_bucket": "mytailor-cd370.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674882751235:android:411bd0eaebc278205bf736",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "674882751235-bclirq6cg6feo97b2c9ls7u3d84s9aj7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5LDfGhXBgJlqUn7VZ0O6dDRfCkw2-ydk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "674882751235-bclirq6cg6feo97b2c9ls7u3d84s9aj7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

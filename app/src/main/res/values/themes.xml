@@ -1,0 +1,43 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionMenuTextColor">@color/app_color2</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+    <style name="checkBoxStyle" parent="Base.Theme.AppCompat">
+        <item name="colorAccent">@color/app_color</item>
+        <item name="android:textColorSecondary">@color/common_google_signin_btn_text_dark_focused</item>
+    </style>
+
+    <!--<style name="SpinnerTheme" parent="Widget.AppCompat.Spinner">
+        <item name="android:background">@drawable/dropdown</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/app_color</item>
+    </style>-->
+
+    <style name="SpinnerTheme2" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:background">@drawable/bg_shape</item>
+    </style>
+
+    <!--<style name="SpinnerThemebackup" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:background">@drawable/dropdownbackup</item>
+    </style>
+
+    <style name="RadioButtonStyle" parent="@android:style/Widget.CompoundButton">
+        <item name="android:background">@drawable/selector_radio</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/_14ssp</item>
+    </style>-->
+
+
+
+</resources>

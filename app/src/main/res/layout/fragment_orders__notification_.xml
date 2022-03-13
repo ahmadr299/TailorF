@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Orders_Notification_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tv_new_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Orders Notifications"
+        android:gravity="center"
+        android:textSize="@dimen/_40ssp"
+        android:visibility="gone"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_order_recylerView"
+        android:visibility="visible"/>
+
+</FrameLayout>

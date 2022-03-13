@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <layer-list>
+        <item android:drawable="@drawable/ic_drop"
+            android:gravity="center_vertical|right|center_horizontal"
+            android:width="@dimen/_12sdp"
+            android:height="@dimen/_12sdp"
+            android:right="@dimen/_10sdp"
+            android:top="@dimen/_6sdp"
+
+            ></item>
+    </layer-list>
+</item>
+</selector>

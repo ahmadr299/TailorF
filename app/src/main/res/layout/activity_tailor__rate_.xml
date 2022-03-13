@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tailor_Rate_Activity">
+
+    <LinearLayout
+        android:weightSum="100"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_weight="40"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/ic_path_4983"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="@dimen/_180sdp"
+                android:src="@drawable/tailor_app_logo" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate The Tailor"
+                android:textSize="30sp"
+                android:textColor="@color/app_color"
+                android:textStyle="bold"/>
+            <RatingBar
+                android:id="@+id/ratebar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:id="@+id/ratebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_28sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/submit_button"
+        android:text="VERIFY"
+        android:fontFamily="@font/segoe_ui_semibold"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_16ssp" />
+
+</RelativeLayout>

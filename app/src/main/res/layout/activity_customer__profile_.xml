@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customer_Profile_Activity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:padding="@dimen/_4sdp"
+        android:background="@color/app_color2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/back_button_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/back_arrow" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/segoe_ui_semibold"
+            android:gravity="center"
+            android:padding="8dp"
+            android:paddingBottom="8dp"
+            android:text="PROFILE"
+            android:textColor="#EFE0BB"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_edit_customerProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/segoe_ui_semibold"
+            android:gravity="center"
+            android:padding="8dp"
+            android:paddingBottom="8dp"
+            android:text="Edit"
+            android:textColor="#EFE0BB"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/personimage"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"/>
+            <LinearLayout
+                android:padding="@dimen/_12sdp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:paddingBottom="@dimen/_12sdp"
+                    android:paddingTop="@dimen/_6sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoe_ui_semibold"
+                    android:text=" Person Name"
+                    android:textColor="@color/font_bold_color"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+                <EditText
+
+                    android:id="@+id/profilePersonName_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/phone_number_background"
+                    android:elevation="3dp"
+                    android:hint="Name"
+                    android:lines="1"
+                    android:textSize="@dimen/_10ssp"
+                    android:padding="16dp"
+                    android:textColorHint="@color/font_hint_color" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:fontFamily="@font/segoe_ui_semibold"
+                    android:textColor="@color/font_bold_color"
+                    android:paddingBottom="@dimen/_12sdp"
+                    android:paddingTop="@dimen/_6sdp"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:enabled="true"
+                    android:id="@+id/profilePhoneNumber_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/phone_number_background"
+                    android:elevation="3dp"
+                    android:fontFamily="@font/segoe_ui"
+                    android:hint="+92 322 1234567"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:textColorHint="@color/font_hint_color"
+                    android:textSize="@dimen/_10ssp"
+                    android:padding="16dp" />
+
+                <TextView
+                    android:paddingBottom="@dimen/_12sdp"
+                    android:paddingTop="@dimen/_6sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoe_ui_semibold"
+                    android:text="Wallet"
+                    android:textColor="@color/font_bold_color"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/customerwallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/phone_number_background"
+                    android:elevation="3dp"
+                    android:hint="Wallet"
+                    android:lines="1"
+                    android:textSize="@dimen/_10ssp"
+                    android:padding="16dp"
+                    android:textColorHint="@color/font_hint_color"
+                    android:enabled="false"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/borderline_profile"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/choose_img"
+                    android:textColor="@color/shadowcolor"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:background="@drawable/btn_bg"
+                    android:text="Choose Image"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </Button>
+                <TextView
+                    android:id="@+id/tv_chooseimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Choose File"
+                    android:layout_gravity="center_vertical"/>
+                <Button
+                    android:id="@+id/upload_img"
+                    android:textColor="@color/shadowcolor"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:background="@drawable/btn_bg"
+                    android:text="Upload"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </Button>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/saveProfile"
+                android:textColor="@color/shadowcolor"
+                android:layout_margin="@dimen/_12sdp"
+                android:background="@drawable/btn_bg"
+                android:text="Save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Button>
+        </LinearLayout>
+
+</LinearLayout>

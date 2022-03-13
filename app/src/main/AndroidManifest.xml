@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mytailor">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Privacy_Policy_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Terms_and_Conditions_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Tailor_Rate_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Tailor_Active_Order_Details_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Setting_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Customer_Order_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Select_Category_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Place_Order_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Customer_Profile_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CustomerNavigationDrawer_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Tailor_Profile_Acitivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".TailorNavigationDrawer_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SignUp_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LogIn_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Splash_Activity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

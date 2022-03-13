@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:padding="20dp"
+    android:background="#C7934E"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/profilepic"
+        />
+    <TextView
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/ProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#EFE0BB"
+        android:text="Loading..."/>
+
+</LinearLayout>

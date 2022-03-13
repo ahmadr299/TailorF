@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/cProfile" android:title="Profile" android:icon="@drawable/profilem"/>
+    <item android:id="@+id/cOrder" android:title="Place Order" android:icon="@drawable/logoutm"/>
+    <item android:id="@+id/cSetting" android:title="Settings" android:icon="@drawable/ic_baseline_settings_24"/>
+    <item android:id="@+id/cLogout" android:title="Logout" android:icon="@drawable/logoutm"/>
+
+
+</menu>

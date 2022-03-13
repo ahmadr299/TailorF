@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#653201"
+        android:padding="@dimen/_4sdp">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28.89dp"
+            android:background="#00000000"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:textAllCaps="true"
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/segoe_ui_semibold"
+            android:gravity="center"
+            android:padding="8dp"
+            android:paddingBottom="8dp"
+            android:text="Edit Item"
+            android:textColor="#EFE0BB"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:paddingTop="40dp"
+                android:paddingBottom="8dp"
+                android:text=" Basic Detail"
+                android:textColor="#653201"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/serviceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/phone_number_background"
+                android:elevation="3dp"
+                android:hint="Paint 01"
+                android:lines="1"
+                android:padding="8dp"
+                android:paddingLeft="18dp"
+                android:textColorHint="#3B271D" />
+            <RadioGroup
+                android:dividerPadding="@dimen/_8sdp"
+                android:id="@+id/stitichingMode"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"
+                    android:layout_marginHorizontal="@dimen/_4sdp"
+                    android:button="@drawable/selector_radio"
+                    android:background="@drawable/phone_number_background"
+                    android:padding="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:id="@+id/newStitching"
+                    android:text="New Stitching"
+                    android:layout_width="0dp"
+                    android:checked="true"
+                    android:layout_height="wrap_content">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"
+                    android:layout_marginHorizontal="@dimen/_4sdp"
+                    android:button="@drawable/selector_radio"
+                    android:background="@drawable/phone_number_background"
+                    android:padding="@dimen/_4sdp"
+                    android:layout_weight="1"
+                    android:id="@+id/AlternationBtn"
+                    android:text="Alternation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                </RadioButton>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Pricing &amp; Delivery Date"
+                android:textColor="#653201"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cost"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/phone_number_background"
+                android:elevation="3dp"
+                android:fontFamily="@font/segoe_ui"
+                android:padding="15dp"
+                android:paddingLeft="18dp"
+                android:textColorHint="#3B271D"
+                android:textSize="14sp"
+                android:text="price"/>
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+                android:hint="15/03/2022"
+                android:background="@drawable/phone_number_background"
+                android:elevation="3dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:paddingLeft="15dp">
+
+
+            </EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Address"
+                android:textColor="#653201"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+                android:hint="Address"
+                android:background="@drawable/phone_number_background"
+                android:elevation="3dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:paddingLeft="15dp">
+
+
+            </EditText>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Measurement"
+                android:textColor="#653201"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/phone_number_background"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/measurement"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="90"
+                    android:background="#00F0F8FF"
+                    android:fontFamily="@font/segoe_ui"
+                    android:hint="Add Pant Measurement"
+                    android:paddingTop="15dp"
+                    android:textColorHint="#3B271D" />
+
+                <ImageButton
+                    android:id="@+id/add_btn"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/ic_ellipse_516"
+                    android:src="@drawable/ic_path_4988"
+                    app:tint="@color/white" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                </ScrollView>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Special Instructions"
+                android:textColor="#653201"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/stitichingDetails"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/phone_number_background"
+                android:elevation="3dp"
+                android:fontFamily="@font/segoe_ui"
+                android:gravity="start"
+                android:hint="Add Instructions "
+                android:padding="8dp"
+                android:paddingLeft="18dp"
+                android:textColorHint="#3B271D" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Cloth Images"
+                android:textColor="#653201"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/add_customer_image"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/clothImage1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            >
+
+                        </ImageView>
+
+                        <ImageButton
+                            android:id="@+id/clothImage1Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="#00000000"
+                            android:src="@drawable/ic_group_3792" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/segoe_ui_semibold"
+                        android:text="Cloth 01"
+                        android:textColor="#3B271D"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/add_customer_image"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/clothImage2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            >
+
+                        </ImageView>
+
+                        <ImageButton
+                            android:id="@+id/clothImage2Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="#00000000"
+                            android:src="@drawable/ic_group_3792" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/segoe_ui_semibold"
+                        android:text="Cloth 02"
+                        android:textColor="#3B271D"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/finish_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/setup_detail_next_button"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:text="Place Order"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

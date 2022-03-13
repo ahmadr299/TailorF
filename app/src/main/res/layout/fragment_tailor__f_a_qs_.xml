@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tailor_FAQs_Fragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is My Tailor App?"
+        android:textColor="@color/app_color"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Tailor App is a mobile application that will help Tailoring Shops, Stitching Shops and home based Tailors to manage their Tailoring orders, customers and their measurements online automatically."
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="There are lot of other features in the app which will help to make your life easy. Please call or Whatsapp at +92 3214163161 for more details."
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is My Tailor app free to use?"
+            android:textColor="@color/app_color"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes, My Tailor App is completely free to use."
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is my data secure?"
+            android:textColor="@color/app_color"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes, by using My Tailor App your data is secured with us."
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+</ScrollView>

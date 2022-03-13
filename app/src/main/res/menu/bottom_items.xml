@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_order"
+        android:icon="@drawable/ic__order"
+        android:fontFamily="@font/segoe_ui_semibold"
+        android:title="Orders" />
+    <item
+        android:id="@+id/bottom_faqs"
+        android:icon="@drawable/ic__order"
+        android:fontFamily="@font/segoe_ui_semibold"
+        android:title="FAQs" />
+</menu>

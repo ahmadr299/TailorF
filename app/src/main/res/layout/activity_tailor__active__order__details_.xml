@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#653201">
+
+        <RelativeLayout
+            android:padding="@dimen/_8sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back_btn_customerOrderDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/back_arrow" />
+
+            <TextView
+                android:id="@+id/orderIdTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Order #011020"
+                android:textAllCaps="false"
+                android:textColor="#EFE0BB"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp">
+
+                <TextView
+                    android:id="@+id/cutomerNameOrderInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center"
+                    android:text="Customer "
+                    android:fontFamily="@font/segoe_ui_semibold"
+                    android:textColor="@color/font_hint_color"
+                    android:textSize="24sp" />
+
+
+
+                <ImageView
+                    android:id="@+id/phoneimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/phone_rounded_icon" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center"
+                    android:text="Order Due Date"
+                    android:fontFamily="@font/segoe_ui_semibold"
+                    android:textColor="#3B271D"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/dueDateCustomerOrderInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="40dp"
+                    android:gravity="center"
+                    android:text="Oct 23,2020"
+                    android:fontFamily="@font/segoe_ui_semibold"
+                    android:textColor="#3B271D"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp">
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="100">
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:scaleType="fitXY"
+                            android:id="@+id/image1"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp"
+                            android:src="@drawable/personimage"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/category"
+                            android:fontFamily="@font/segoe_ui"
+                            android:textColor="#646464"
+                            android:text="category"
+                            android:layout_toRightOf="@id/image1"
+                            android:layout_toEndOf="@id/image1"
+                            android:textSize="14dp"
+                            android:layout_marginLeft="10dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/measurements"
+                            android:fontFamily="@font/segoe_ui"
+                            android:textColor="#646464"
+                            android:text="Measurements"
+                            android:layout_toRightOf="@id/image1"
+                            android:layout_toEndOf="@id/image1"
+                            android:layout_below="@id/category"
+                            android:textSize="14dp"
+                            android:layout_marginLeft="10dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/address"
+                            android:fontFamily="@font/segoe_ui"
+                            android:textColor="#646464"
+                            android:text="33B,Johar Town, Lahore, Pakistan"
+                            android:layout_toRightOf="@id/image1"
+                            android:layout_toEndOf="@id/image1"
+                            android:layout_below="@id/measurements"
+                            android:textSize="14dp"
+                            android:layout_marginLeft="10dp" />
+
+                        <View
+                            android:layout_marginTop="@dimen/_14sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="@dimen/_8sdp"
+                            android:layout_below="@id/image1"
+                            android:background="@color/app_color"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/totalbill"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="25dp"
+                            android:gravity="center"
+                            android:text="Total Bill Amount"
+                            android:fontFamily="@font/segoe_ui_semibold"
+                            android:textColor="#3B271D"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/totalBillAmount_edt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="25dp"
+                            android:fontFamily="@font/segoe_ui_semibold"
+                            android:gravity="center"
+                            android:text="1400"
+                            android:textColor="#3B271D"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+                    <View
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@color/app_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"></View>
+                </LinearLayout>
+
+
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/Confirm_Order_CustomerOrderInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/add_item_button"
+                    android:text="Confirm Order"
+                    android:textColor="#EFE0BB"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:id="@+id/orderCompleted"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_25sdp"
+                    android:background="@drawable/add_item_button"
+                    android:text="Order Complete"
+                    android:textColor="#EFE0BB"
+                    android:textSize="18sp"
+                    android:layout_marginTop="@dimen/_20sdp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

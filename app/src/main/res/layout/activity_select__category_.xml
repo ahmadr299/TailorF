@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Select_Category_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:background="#653201">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="17.96dp"
+            android:layout_height="16.95dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28.89dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:textAllCaps="true"
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:paddingBottom="8dp"
+            android:fontFamily="@font/segoe_ui_semibold"
+            android:text="Select Category"
+            android:textColor="#EFE0BB"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <!-- <LinearLayout
+
+         android:orientation="vertical"
+         android:layout_margin="20dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <Spinner
+
+             android:entries="@array/pleats"
+             android:layout_marginLeft="@dimen/_8sdp"
+             android:layout_marginRight="@dimen/_8sdp"
+             android:id="@+id/category"
+             android:padding="8dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+         </Spinner>
+     </LinearLayout>-->
+    <LinearLayout
+
+        android:background="@drawable/spinner_shape"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:prompt="@string/app_name"
+            style="@style/SpinnerTheme2"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:id="@+id/category"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText">
+        </Spinner>
+    </LinearLayout>
+
+
+    <!--<LinearLayout
+
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:id="@+id/innerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:fontFamily="@font/segoe_ui_semibold"
+            android:padding="@dimen/_8sdp"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/app_color"
+            android:text="Related items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <LinearLayout
+            android:padding="12sp"
+            android:visibility="visible"
+            android:layout_margin="8dp"
+            android:background="@drawable/phone_number_background"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:elevation="5dp"
+            >
+
+            <EditText
+                android:singleLine="true"
+                android:padding="@dimen/_6sdp"
+                android:id="@+id/serachcategory"
+                android:background="#00F0F8FF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Search Item" />
+
+        </LinearLayout>
+    </LinearLayout>-->
+    <LinearLayout
+        android:id="@+id/innerLayout"
+        android:visibility="gone"
+        android:background="@drawable/spinner_shape"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:id="@+id/category6"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/app_name"
+            style="@style/SpinnerTheme2"
+            tools:ignore="HardcodedText">
+        </Spinner>
+    </LinearLayout>
+</LinearLayout>

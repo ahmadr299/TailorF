@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#402002</color>
+    <!-- <color name="colorPrimaryDark">#EFE0BB</color>-->
+    <color name="colorPrimaryDark">#653201</color>
+    <color name="colorAccent">#653201</color>
+    <color name="black_color">#000000</color>
+    <color name="app_color">#A05E2B</color>
+    <color name="app_color2">#653201</color>
+    <color name="app_color3">#C7934E</color>
+    <color name="shadowcolor">#EFE0BB</color>
+    <color name="font_bold_color">#3B271D</color>
+    <color name="font_hint_color">#C7934E</color>
+    <color name="font_color">#653201</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#00872D</color>
+    <color name="black">#000000</color>
+    <color name="common_google_signin_btn_text_dark_focused">@android:color/black</color>
+    <color name="white">#ffffff</color>
+
+</resources>

@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kurta Measurements (Inches)"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/app_color2"
+            android:textSize="25sp"/>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_2sdp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_1sdp"
+            android:paddingBottom="@dimen/_1sdp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/kurta_length"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_weight=".7"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:maxLines="1"
+                android:padding="@dimen/_14sdp"
+                android:text="Length"
+                android:textColor="@color/app_color2"
+                android:textSize="@dimen/_14ssp"></TextView>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_weight="1.3"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/_4sdp">
+
+                <EditText
+                    android:id="@+id/et_kurtalength"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_bg_shape"
+                    android:fontFamily="@font/segoe_ui"
+                    android:gravity="center"
+                    android:hint="100"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingLeft="@dimen/_12sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingBottom="@dimen/_12sdp"
+
+                    android:singleLine="true"
+                    android:textSize="@dimen/_14ssp"></EditText>
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/length">
+
+                </ImageView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_2sdp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_1sdp"
+            android:paddingBottom="@dimen/_1sdp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/kurta_neck"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_weight=".7"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:maxLines="1"
+                android:padding="@dimen/_14sdp"
+                android:text="Neck"
+                android:textColor="@color/app_color2"
+                android:textSize="@dimen/_14ssp"></TextView>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_weight="1.3"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/_4sdp">
+
+                <EditText
+                    android:id="@+id/et_kurtaneck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_bg_shape"
+                    android:fontFamily="@font/segoe_ui"
+                    android:gravity="center"
+                    android:hint="100"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingLeft="@dimen/_12sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingBottom="@dimen/_12sdp"
+
+                    android:singleLine="true"
+                    android:textSize="@dimen/_14ssp"></EditText>
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/neck">
+
+                </ImageView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_2sdp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_1sdp"
+            android:paddingBottom="@dimen/_1sdp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/kurta_shoulder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_weight=".7"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:maxLines="1"
+                android:padding="@dimen/_14sdp"
+                android:text="Shoulder"
+                android:textColor="@color/app_color2"
+                android:textSize="@dimen/_14ssp"></TextView>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_weight="1.3"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/_4sdp">
+
+                <EditText
+                    android:id="@+id/et_kurtashoulder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_bg_shape"
+                    android:fontFamily="@font/segoe_ui"
+                    android:gravity="center"
+                    android:hint="100"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingLeft="@dimen/_12sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingBottom="@dimen/_12sdp"
+
+                    android:singleLine="true"
+                    android:textSize="@dimen/_14ssp"></EditText>
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/shoulder">
+
+                </ImageView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_2sdp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_1sdp"
+            android:paddingBottom="@dimen/_1sdp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/kurta_chest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_weight=".7"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:maxLines="1"
+                android:padding="@dimen/_14sdp"
+                android:text="Chest"
+                android:textColor="@color/app_color2"
+                android:textSize="@dimen/_14ssp"></TextView>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_weight="1.3"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/_4sdp">
+
+                <EditText
+                    android:id="@+id/et_kurtachest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_bg_shape"
+                    android:fontFamily="@font/segoe_ui"
+                    android:gravity="center"
+                    android:hint="100"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingLeft="@dimen/_12sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingBottom="@dimen/_12sdp"
+
+                    android:singleLine="true"
+                    android:textSize="@dimen/_14ssp"></EditText>
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/chest">
+
+                </ImageView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_2sdp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_1sdp"
+            android:paddingBottom="@dimen/_1sdp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/kurta_waist"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_weight=".7"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:maxLines="1"
+                android:padding="@dimen/_14sdp"
+                android:text="Waist"
+                android:textColor="@color/app_color2"
+                android:textSize="@dimen/_14ssp"></TextView>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_weight="1.3"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/_4sdp">
+
+                <EditText
+                    android:id="@+id/et_kurtawaist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_bg_shape"
+                    android:fontFamily="@font/segoe_ui"
+                    android:gravity="center"
+                    android:hint="100"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingLeft="@dimen/_12sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingBottom="@dimen/_12sdp"
+
+                    android:singleLine="true"
+                    android:textSize="@dimen/_14ssp"></EditText>
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/waist">
+
+                </ImageView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_2sdp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_1sdp"
+            android:paddingBottom="@dimen/_1sdp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/kurta_seat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_weight=".7"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:maxLines="1"
+                android:padding="@dimen/_14sdp"
+                android:text="Seat"
+                android:textColor="@color/app_color2"
+                android:textSize="@dimen/_14ssp"></TextView>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_weight="1.3"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/_4sdp">
+
+                <EditText
+                    android:id="@+id/et_kurtaseat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_bg_shape"
+                    android:fontFamily="@font/segoe_ui"
+                    android:gravity="center"
+                    android:hint="100"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingLeft="@dimen/_12sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingBottom="@dimen/_12sdp"
+
+                    android:singleLine="true"
+                    android:textSize="@dimen/_14ssp"></EditText>
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/seat">
+
+                </ImageView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_2sdp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_1sdp"
+            android:paddingBottom="@dimen/_1sdp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/kurta_sleeves"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_weight=".7"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:maxLines="1"
+                android:padding="@dimen/_14sdp"
+                android:text="Sleeves"
+                android:textColor="@color/app_color2"
+                android:textSize="@dimen/_14ssp"></TextView>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_weight="1.3"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/_4sdp">
+
+                <EditText
+                    android:id="@+id/et_kurtasleeves"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_bg_shape"
+                    android:fontFamily="@font/segoe_ui"
+                    android:gravity="center"
+                    android:hint="100"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingLeft="@dimen/_12sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingBottom="@dimen/_12sdp"
+
+                    android:singleLine="true"
+                    android:textSize="@dimen/_14ssp"></EditText>
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/sleeves">
+
+                </ImageView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_2sdp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_1sdp"
+            android:paddingBottom="@dimen/_1sdp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/kurta_sleevescircum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_weight=".7"
+                android:fontFamily="@font/segoe_ui_semibold"
+                android:padding="@dimen/_14sdp"
+                android:text="Sleeve Circum (All Around)"
+                android:textColor="@color/app_color2"
+                android:textSize="@dimen/_14ssp"></TextView>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_weight="1.3"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/_4sdp">
+
+                <EditText
+                    android:id="@+id/et_kurtasleevescircum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_bg_shape"
+                    android:fontFamily="@font/segoe_ui"
+                    android:gravity="center"
+                    android:hint="100"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingLeft="@dimen/_12sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingBottom="@dimen/_12sdp"
+
+                    android:singleLine="true"
+                    android:textSize="@dimen/_14ssp"></EditText>
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/sleevecircum">
+
+                </ImageView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/kurta_addbtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:background="@color/app_color2"
+            android:text="Add"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</ScrollView>
